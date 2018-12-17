@@ -7,7 +7,7 @@ assignees: ''
 ---
 
 <!--
-  Thank you for contributing your idea to Crystal Ball 🎉
+  Thank you for contributing your idea to webpack-base 🎉
 -->
 
 ## Feature summary

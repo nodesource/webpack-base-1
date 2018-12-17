@@ -1,14 +1,11 @@
 {
-  "name": "@crystal-ball/webpack-base",
-  "version": "0.0.0-semantic",
-  "description": "Customizable webpack base configuration generator",
+  "name": "@ns-private/webpack-base",
+  "version": "2.0.0",
+  "description": "N|S webpack base configurations",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/crystal-ball/webpack-base.git"
-  },
-  "publishConfig": {
-    "access": "public"
+    "url": "https://github.com/nodesource/webpack-base.git"
   },
   "keywords": [
     "webpack",
@@ -16,18 +13,21 @@
     "customizable"
   ],
   "contributors": [
-    "Dan Hedgecock <hedgecock.d@gmail.com> (https://danhedgecock.com)"
+    "Dan Hedgecock <dan.hedgecock@nodesource.com>"
   ],
-  "license": "ISC",
   "engines": {
     "node": ">=8.11"
+  },
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "ttp://packages-internal.nodesource.io"
   },
   "scripts": {
     "commit": "git cz",
     "container": "docker-compose run --service-ports --rm app",
     "container:test": "docker-compose run --rm webpack",
     "test": "npm run lint && npm run test:unit",
-    "test:unit": "jest src",
+    "test:unit": "jest src/*.spec.js",
     "test:ci": "docker-compose -f docker-compose.test.yml up --exit-code-from cypress",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
@@ -78,8 +78,7 @@
     "eslint-config-eloquence": "^9.6.0",
     "husky": "^1.2.0",
     "jest": "^23.6.0",
-    "prettier": "^1.15.3",
-    "semantic-release": "^15.12.4"
+    "prettier": "^1.15.3"
   },
   "husky": {
     "prepush": "npm run test"

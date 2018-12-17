@@ -1,11 +1,11 @@
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 /*
  * 📦 Single webpack configuration file handles different environment build targets
  * by using webpack-base to merge configurations common to all environments with
  * configurations unique to targeted environment.
  *
- * 📝 https://github.com/crystal-ball/webpack-base
+ * 📝 https://github.com/nodesource/webpack-base
  */
 module.exports = () => {
   /*

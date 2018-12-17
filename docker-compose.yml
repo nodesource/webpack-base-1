@@ -11,7 +11,7 @@ services:
     volumes:
       # Mount resources that we want kept in sync with local as volumes for development
       # webpack source
-      - './src:/usr/src/app/node_modules/@crystal-ball/webpack-base/src'
+      - './src:/usr/src/app/node_modules/@ns-private/webpack-base/src'
       # Template project
       - './test-app/src:/usr/src/app/src'
       - './test-app/webpack.config.js:/usr/src/app/webpack.config.js'

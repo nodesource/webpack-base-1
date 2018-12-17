@@ -21,7 +21,7 @@ RUN node scripts/prepare-container-install.js
 RUN npm install
 
 # Copy project package to installed version package
-COPY ./package.json /usr/src/app/node_modules/@crystal-ball/webpack-base/package.json
+COPY ./package.json /usr/src/app/node_modules/@ns-private/webpack-base/package.json
 
 # Copy test app in to container
 COPY ./test-app .

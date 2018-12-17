@@ -1,24 +1,15 @@
 <div align="right">
-  <img src="./assets/project-logo.png" height="100" alt="Crystal Ball webpack base" />
+  <img src="./assets/project-logo.png" height="100" alt="N|S webpack base" />
 </div>
 
 <hr >
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@crystal-ball/webpack-base">
-    <img src="https://img.shields.io/npm/v/@crystal-ball/webpack-base.svg?style=flat-square" alt="current version">
-  </a>
-  <a href="https://travis-ci.com/crystal-ball/webpack-base">
-    <img src="https://travis-ci.com/crystal-ball/webpack-base.svg?branch=master" alt="Build">
-  </a>
   <a href="https://github.com/prettier/prettier" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="Prettier">
   </a>
   <a href="https://www.zenhub.com/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Shipping_faster_with-ZenHub-5e60ba.svg?style=flat-square" alt="ZenHub" />
-  </a>
-  <a href="https://github.com/semantic-release/semantic-release" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="managed by semantic release">
   </a>
   <img src="https://img.shields.io/badge/%20%20%F0%9F%A6%84%F0%9F%8C%88-made%20with%20love-ce068b.svg" alt="made with love" />
 </p>
@@ -50,7 +41,7 @@ _ℹ️ See the [`test-app`](./test-app) for a complete example application setu
 ### 1. Install
 
 ```bash
-npm i -D @crystal-ball/webpack-base
+npm i -D @ns-private/webpack-base
 ```
 
 ### 2. Add `package.json` commands
@@ -118,7 +109,7 @@ way to support specific project needs.
 
 ```javascript
 // webpack.config.js
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 module.exports = () => {
   const { configs } = webpackBase(/* options */)
@@ -250,7 +241,7 @@ options:
 
 ```javascript
 // webpack.config.js
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 module.exports = () => {
   return webpackBase({ target: 'electron-renderer' }).configs
@@ -279,7 +270,7 @@ The configured loaders and plugins can be accessed directly in the return value:
 
 ```javascript
 // webpack.config.js
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 module.exports = () => {
   const { loaders, plugins } = webpackBase(/* options */)

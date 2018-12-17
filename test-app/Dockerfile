@@ -37,8 +37,8 @@ RUN npm run test
 FROM base as builder
 
 # Copy project package to installed version package
-COPY ./src /usr/src/app/node_modules/@crystal-ball/webpack-base/src
-COPY ./package.json /usr/src/app/node_modules/@crystal-ball/webpack-base/package.json
+COPY ./src /usr/src/app/node_modules/@ns-private/webpack-base/src
+COPY ./package.json /usr/src/app/node_modules/@ns-private/webpack-base/package.json
 
 # Copy test app in to container
 COPY ./test-app .

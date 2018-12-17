@@ -23,7 +23,7 @@ See [webpack](#webpack) for details on customizing webpack configurations.
 ## webpack
 
 All webpack configurations are managed in [`webpack.config.js`][webpack-config]
-and utilize the [`@crystal-ball/webpack-base`][webpack-base] package.
+and utilize the [`@ns-private/webpack-base`][webpack-base] package.
 
 - Follows project conventions outlined in webpack-base readme
 
@@ -33,5 +33,5 @@ _Test app landing screen photo by Karly Santiago on Unsplash_
 
 <!-- Links -->
 
-[webpack-base]: https://github.com/crystal-ball/webpack-base
+[webpack-base]: https://github.com/nodesource/webpack-base
 [webpack-config]: ./webpack.config.js
