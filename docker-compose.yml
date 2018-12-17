@@ -8,6 +8,10 @@ services:
       - '3000:3000'
       - '5000:5000'
     volumes:
-      # Mount source so we don't have to rebuild image on every file change
-      - './src:/usr/src/react-application-prototype/node_modules/@crystal-ball/webpack-base/src'
-    command: /bin/sh
+      # Mount resources that we want kept in sync with local as volumes for development
+      # webpack source
+      - './src:/usr/src/app/node_modules/@ns-private/webpack-base/src'
+      # Template project
+      - './test-app/src:/usr/src/app/src'
+      - './test-app/webpack.config.js:/usr/src/app/webpack.config.js'
+    entrypoint: /bin/sh

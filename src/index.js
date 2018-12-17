@@ -11,7 +11,7 @@ const generateLoaders = require('./generate-loaders')
 const generatePlugins = require('./generate-plugins')
 
 /**
- * Crystal ball projects' base webpack configs include configurations for loader
+ * N|S projects' base webpack configs include configurations for loader
  * definitions, dev server, build indicators, stats, etc. The configurations are
  * specific to environment and can be overriden as needed for custom build
  * requirements.

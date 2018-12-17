@@ -1,28 +1,18 @@
 <div align="right">
-  <h1 align="right">
-    <img height=75 src="./docs/assets/readme-header.png" alt="webpack base">
-  </h1>
+  <img src="./assets/project-logo.png" height="100" alt="N|S webpack base" />
+</div>
 
-  <!-- prettier-ignore-start -->
-  <a href="https://www.npmjs.com/package/@crystal-ball/webpack-base">
-    <img src="https://img.shields.io/npm/v/@crystal-ball/webpack-base" alt="Package version" valign="text-top"/>
-  </a>
-  <a href="https://www.npmjs.com/package/@crystal-ball/webpack-base">
-    <img src="https://img.shields.io/npm/dt/@crystal-ball/webpack-base?color=blue" alt="NPM downloads" valign="text-top" />
-  </a>
-  <a href="https://github.com/crystal-ball/webpack-base/actions?workflow=CI%2FCD">
-    <img src="https://github.com/crystal-ball/webpack-base/workflows/CI%2FCD/badge.svg" alt="Build status" valign="text-top" />
+<hr >
+
+<p align="center">
+  <a href="https://github.com/prettier/prettier" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="Prettier">
   </a>
   <a href="https://snyk.io/test/github/crystal-ball/webpack-base?targetFile=package.json">
     <img src="https://snyk.io/test/github/crystal-ball/webpack-base/badge.svg?targetFile=package.json" alt="Known vulnerabilities" valign="text-top" />
   </a>
-  <a href="https://codeclimate.com/github/crystal-ball/webpack-base/test_coverage">
-    <img src="https://api.codeclimate.com/v1/badges/eee860e3bd1519dacf5e/test_coverage" alt="Test coverage" valign="text-top" />
-  </a>
-  <a href="https://codeclimate.com/github/crystal-ball/webpack-base/maintainability">
-    <img src="https://api.codeclimate.com/v1/badges/eee860e3bd1519dacf5e/maintainability" alt="Maintainability" valign="text-top" />
-  </a>
-  <code>:status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>
+  <img src="https://img.shields.io/badge/%20%20%F0%9F%A6%84%F0%9F%8C%88-made%20with%20love-ce068b.svg" alt="made with love" />
+</p>
 
   <br />
   <a href="https://renovatebot.com/">
@@ -84,7 +74,7 @@
 **1. Install**
 
 ```bash
-npm i -D @crystal-ball/webpack-base
+npm i -D @ns-private/webpack-base
 ```
 
 **2. Add `package.json` commands**
@@ -156,7 +146,7 @@ support specific project needs.
 
 ```javascript
 // webpack.config.js
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 module.exports = () => {
   const { configs } = webpackBase(/* options */)
@@ -287,7 +277,7 @@ options:
 
 ```javascript
 // webpack.config.js
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 module.exports = () => {
   return webpackBase({ target: 'electron-renderer' }).configs
@@ -317,7 +307,7 @@ this is useful when setting up Storybook to pass additional loaders and plugins.
 
 ```javascript
 // webpack.config.js
-const webpackBase = require('@crystal-ball/webpack-base')
+const webpackBase = require('@ns-private/webpack-base')
 
 module.exports = () => {
   const { loaders, plugins } = webpackBase(/* options */)

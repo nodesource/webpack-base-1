@@ -45,6 +45,8 @@ RUN CI=true CYPRESS_INSTALL_BINARY=0 npm install --no-optional --loglevel error
 COPY ./src /usr/src/react-application-prototype/node_modules/@crystal-ball/webpack-base/src
 COPY ./package.json /usr/src/react-application-prototype/node_modules/@crystal-ball/webpack-base/package.json
 
+# Copy project package to installed version package
+COPY ./package.json /usr/src/app/node_modules/@ns-private/webpack-base/package.json
 
 # Copy serve config for prod build testing with `serve`
 RUN echo "{ \"public\": \"public\" }" >> ./serve.json

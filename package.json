@@ -1,15 +1,12 @@
 {
-  "name": "@crystal-ball/webpack-base",
-  "version": "11.6.0",
-  "description": "Customizable webpack base configuration generator",
+  "name": "@ns-private/webpack-base",
+  "version": "2.0.0",
+  "description": "N|S webpack base configurations",
   "main": "src/index.js",
   "type": "commonjs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/crystal-ball/webpack-base.git"
-  },
-  "publishConfig": {
-    "access": "public"
+    "url": "https://github.com/nodesource/webpack-base.git"
   },
   "keywords": [
     "webpack",
@@ -17,11 +14,14 @@
     "customizable"
   ],
   "contributors": [
-    "Dan Hedgecock <hedgecock.d@gmail.com> (https://danhedgecock.com)"
+    "Dan Hedgecock <dan.hedgecock@nodesource.com>"
   ],
-  "license": "ISC",
   "engines": {
     "node": "14"
+  },
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "ttp://packages-internal.nodesource.io"
   },
   "scripts": {
     "commit": "cz",
