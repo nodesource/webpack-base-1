@@ -40,6 +40,7 @@ module.exports = ({
   // gzipped assets that have the same name
   compressPlugin: new CompressionPlugin({
     filename: '[path][query]',
+    exclude: /\.(jpe?g|png|gif)$/i,
   }),
 
   // --- 🖨 File copying
