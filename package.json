@@ -20,7 +20,7 @@
   },
   "license": "UNLICENSED",
   "publishConfig": {
-    "registry": "ttp://packages-internal.nodesource.io"
+    "registry": "http://packages-internal.nodesource.io"
   },
   "scripts": {
     "commit": "git cz",
