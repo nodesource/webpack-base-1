@@ -672,29 +672,8 @@ Object {
     },
     MiniCSSExtractPlugin {
       "options": Object {
-<<<<<<< HEAD
         "chunkFilename": "static/css/[name].[contenthash].css",
         "filename": "static/css/[name].[contenthash].css",
-=======
-        "chunkFilename": "static/css/[name].css",
-        "filename": "static/css/[name].css",
-      },
-    },
-    CompressionPlugin {
-      "options": Object {
-        "algorithm": [Function],
-        "cache": false,
-        "compressionOptions": Object {
-          "level": 9,
-        },
-        "deleteOriginalAssets": false,
-        "exclude": /\\\\\\.\\(jpe\\?g\\|png\\|gif\\)\\$/i,
-        "filename": "[path][query]",
-        "include": undefined,
-        "minRatio": 0.8,
-        "test": undefined,
-        "threshold": 0,
->>>>>>> e3fd344 (update snapshots)
       },
     },
   ],
@@ -953,24 +932,8 @@ Object {
     },
     MiniCSSExtractPlugin {
       "options": Object {
-        "chunkFilename": "static/css/[name].[chunkhash].css",
-        "filename": "static/css/[name].[chunkhash].css",
-      },
-    },
-    CompressionPlugin {
-      "options": Object {
-        "algorithm": [Function],
-        "cache": false,
-        "compressionOptions": Object {
-          "level": 9,
-        },
-        "deleteOriginalAssets": false,
-        "exclude": /\\\\\\.\\(jpe\\?g\\|png\\|gif\\)\\$/i,
-        "filename": "[path][query]",
-        "include": undefined,
-        "minRatio": 0.8,
-        "test": undefined,
-        "threshold": 0,
+        "chunkFilename": "static/css/[name].[contenthash].css",
+        "filename": "static/css/[name].[contenthash].css",
       },
     },
   ],

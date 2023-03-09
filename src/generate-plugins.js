@@ -23,19 +23,19 @@ module.exports = ({ envVars, fileHash, flags, paths, publicPath }) => ({
 
   // --- 📦 Build Prep
   // Wipe output folder before the build
-  // cleanPlugin: new CleanWebpackPlugin(),
-  cleanPlugin: new CleanWebpackPlugin([outputPath], {
-    // root is required b/c our paths are absolute and clean makes sure they match
-    root: process.cwd(),
-  }),
+  cleanPlugin: new CleanWebpackPlugin(),
+  // cleanPlugin: new CleanWebpackPlugin([outputPath], {
+  //   // root is required b/c our paths are absolute and clean makes sure they match
+  //   root: process.cwd(),
+  // }),
 
-  // --- ⬇️ Compress
-  // Gzip build assets, do not include deleteOriginalAssets or it will delete the
-  // gzipped assets that have the same name
-  compressPlugin: new CompressionPlugin({
-    filename: '[path][query]',
-    exclude: /\.(jpe?g|png|gif)$/i,
-  }),
+  // // --- ⬇️ Compress
+  // // Gzip build assets, do not include deleteOriginalAssets or it will delete the
+  // // gzipped assets that have the same name
+  // compressPlugin: new CompressionPlugin({
+  //   filename: '[path][query]',
+  //   exclude: /\.(jpe?g|png|gif)$/i,
+  // }),
 
   // --- 🖨 File copying
   // Copy public directory to build directory, this is an escape hatch for assets
